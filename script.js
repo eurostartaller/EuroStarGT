@@ -41,8 +41,9 @@ document.addEventListener('DOMContentLoaded', function() {
             alert('Hubo un problema al enviar el correo');
             console.error('Error:', error);
         });
-        alert('Gracias por agendar una cita. Te contactaremos pronto.');
         citaForm.reset();
+        alert('Gracias por agendar una cita. Te contactaremos pronto.');
+        
     });
 
     // Datos de las marcas de vehículos
