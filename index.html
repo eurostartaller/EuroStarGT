@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taller Mecánico Eurostar</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="flex flex-col min-h-screen bg-black text-white">
+    <div class="w-full px-4 md:px-6 lg:px-8 xl:px-10 mx-auto max-w-screen-lg">
+    <header class="px-4 lg:px-6 h-14 flex items-center justify-between">
+        <a class="flex items-center justify-center" href="#">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0348-BjMYlKXPBQr2kYI57egK3I33lfNkwW.jpeg" alt="Eurostar Taller Mecánico Logo" width="100" height="40" class="mr-2">
+        </a>
+        <nav class="hidden md:flex gap-4 sm:gap-6">
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#inicio">Inicio</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#servicios">Servicios</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#galeria">Galería</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4" href="#contacto">Contacto</a>
+        </nav>
+        <button id="mobileMenuBtn" class="md:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+        </button>
+    </header>
+
+    <div id="mobileMenu" class="hidden md:hidden">
+        <nav class="flex flex-col items-center py-4">
+            <a class="text-sm font-medium hover:underline underline-offset-4 py-2" href="#inicio">Inicio</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4 py-2" href="#servicios">Servicios</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4 py-2" href="#galeria">Galería</a>
+            <a class="text-sm font-medium hover:underline underline-offset-4 py-2" href="#contacto">Contacto</a>
+        </nav>
+    </div>
+
+    <main class="flex-1">
+        <section id="inicio" class="w-full py-12 md:py-24 lg:py-32 xl:py-48">
+            <div class="container px-4 md:px-6">
+                <div class="flex flex-col items-center space-y-4 text-center">
+                    <div class="space-y-4">
+                        <h1 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-white">
+                            Taller Mecánico Eurostar
+                        </h1>
+                        <p class="mx-auto max-w-[700px] text-gray-300 md:text-xl">
+                            Servicio de calidad y confianza para tu vehículo. Más de 8 años de experiencia nos respaldan.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="servicios" class="w-full py-12 md:py-24 lg:py-32 bg-black">
+            <div class="container px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Nuestros Servicios</h2>
+                <div class="w-full space-y-2">
+                    <button id="serviciosBtn" class="w-full justify-between text-black bg-white p-2 rounded flex items-center">
+                        <span>Ver lista de servicios</span>
+                        <span class="transform transition-transform duration-200">▼</span>
+                    </button>
+                    <div id="serviciosContent" class="hidden space-y-2">
+                        <div class="bg-gray-800 text-white p-4 rounded">
+                            <h3 class="font-bold mb-2">Servicios de Mantenimiento</h3>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Cambio de aceite y filtros</li>
+                                <li>Afinación de motor</li>
+                                <li>Revisión y cambio de frenos</li>
+                                <li>Alineación y balanceo</li>
+                                <li>Revisión de suspensión</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800 text-white p-4 rounded">
+                            <h3 class="font-bold mb-2">Reparaciones Mecánicas</h3>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Reparación de motor</li>
+                                <li>Reparación de transmisión</li>
+                                <li>Reparación de sistema de escape</li>
+                                <li>Reparación de sistema de dirección</li>
+                                <li>Reparación de sistema de refrigeración</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-800 text-white p-4 rounded">
+                            <h3 class="font-bold mb-2">Servicios Eléctricos y Electrónicos</h3>
+                            <ul class="list-disc pl-5 space-y-1">
+                                <li>Diagnóstico computarizado</li>
+                                <li>Reparación de sistema eléctrico</li>
+                                <li>Reparación de alternadores y arranques</li>
+                                <li>Instalación de accesorios eléctricos</li>
+                                <li>Reparación de sistemas de aire acondicionado</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" class="w-full py-12 md:py-24 lg:py-32 bg-black">
+            <div class="container px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Galería</h2>
+                <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    <div class="space-y-2">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0410-u9LyGyFAnbiGF9g3jVD9H3142iGHl0.jpeg" alt="Motor de alto rendimiento Mercedes-Benz AMG" class="rounded-lg object-cover w-full h-[200px] sm:h-[300px] lg:h-[400px]">
+                        <p class="text-sm text-gray-300">Acudimos hasta tu domicilio por tu vehículo, nuestra atención personalizada para cada uno de nuestros clientes que forman parte de esta marca en construcción</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0403-7voAdOWx1Ul11wiKXmHpVBXuCjDDWY.jpeg" alt="Interior de vehículo de lujo" class="rounded-lg object-cover w-full h-[200px] sm:h-[300px] lg:h-[400px]">
+                        <p class="text-sm text-gray-300">EuroStar consiente tu vehículo con el mismo amor e interés como tú lo harías, la confianza de los clientes habla por nosotros.</p>
+                    </div>
+                    <div class="space-y-2">
+                        <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0404-4GB6oFL3vDMU1eLBcn0C4g71jzylbQ.jpeg" alt="Dodge Challenger personalizado" class="rounded-lg object-cover w-full h-[200px] sm:h-[300px] lg:h-[400px]">
+                        <p class="text-sm text-gray-300">Los autos de más alta gama de Guatemala son vistos por EuroStar, somos especialistas en resolver tus necesidades.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="w-full py-12 md:py-24 lg:py-32 bg-black">
+            <div class="container px-4 md:px-6 mx-auto">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Contacto</h2>
+                <div class="flex flex-col items-center justify-center gap-8">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/IMG_0348-BjMYlKXPBQr2kYI57egK3I33lfNkwW.jpeg" alt="Eurostar Taller Mecánico Logo" width="200" height="80" class="mb-4">
+                    <p class="text-xl font-bold text-white mb-2">Teléfono: 51803210</p>
+                    <p class="text-white mb-4">Km 21.5 Carretera A El Salvador</p>
+                    <div class="bg-gray-900 p-4 rounded-lg">
+                        <h3 class="text-lg font-semibold text-white mb-2">Horario de atención:</h3>
+                        <p class="text-white">Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="agendar-cita" class="w-full py-12 md:py-24 lg:py-32">
+            <div class="container px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">¿Necesitas una cita?</h2>
+                <div class="max-w-[500px] mx-auto">
+                    <form id="citaForm" class="space-y-4">
+                        <input type="text" name="name" placeholder="Nombre" required class="w-full p-2 rounded text-black">
+                        <input type="email" name="email" placeholder="Correo electrónico" required class="w-full p-2 rounded text-black">
+                        <input type="tel" name="phone" placeholder="Teléfono" required class="w-full p-2 rounded text-black">
+                        <input type="text" name="vehicle" placeholder="Marca y modelo del vehículo" required class="w-full p-2 rounded text-black">
+                        <input type="date" name="date" required class="w-full p-2 rounded text-black">
+                        <textarea name="description" placeholder="Describe el servicio que necesitas" rows="4" required class="w-full p-2 rounded-md bg-gray-800 text-white border border-gray-700"></textarea>
+                        <button type="submit" class="w-full bg-blue-600 text-white p-2 rounded hover:bg-blue-700">Solicitar cita</button>
+                    </form>
+                    <p class="text-gray-300 text-sm mt-4 text-center">
+                        Te contactaremos pronto para confirmar tu cita.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="marcas" class="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
+            <div class="container px-4 md:px-6">
+                <h2 class="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Marcas que atendemos</h2>
+                <div class="grid gap-8 md:grid-cols-2">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-4 text-white">Vehículos Americanos</h3>
+                        <div id="americanBrands"></div>
+                    </div>
+                    <div> 
+                        <h3 class="text-2xl font-bold mb-4 text-white">Vehículos Europeos</h3>
+                        <div id="europeanBrands"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t border-gray-800">
+        <p class="text-xs text-gray-400">© 2024 Taller Mecánico Eurostar. Todos los derechos reservados.</p>
+        <nav class="sm:ml-auto flex gap-4 sm:gap-6">
+            <a class="text-xs hover:underline underline-offset-4 text-white" href="#">Términos de Servicio</a>
+            <a class="text-xs hover:underline underline-offset-4 text-white" href="#">Privacidad</a>
+        </nav>
+        <div class="flex space-x-4">
+            <a href="https://www.facebook.com/share/15C1DX4HQ2/?mibextid=LQQJ4d" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                <span class="sr-only">Facebook</span>
+            </a>
+            <a href="#" class="text-gray-500 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                <span class="sr-only">Twitter</span>
+            </a>
+            <a href="https://www.instagram.com/eurostargt/profilecard/?igsh=MXByenBqdWo2YTRlaQ==" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-gray-600">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-5 w-5 text-white"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                <span class="sr-only">Instagram</span>
+            </a>
+        </div>
+    </footer>
+    <div>
+    <script src="script.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+</body>
+</html>
