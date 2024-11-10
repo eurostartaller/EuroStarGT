@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    emailjs.init("UOvdq5YehBubpOE4K");
+    emailjs.init("udW2sypvpDPXv4148");
     
     // Funcionalidad para el formulario de cita
     const citaForm = document.getElementById('citaForm');
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function() {
         e.preventDefault();
         
         // Envía el formulario con EmailJS
-        emailjs.sendForm('service_75r5jwj', 'template_ugaum3k', this)
+        emailjs.sendForm('service_eq8llse', 'template_czql9ur', this)
         .then(function(response) {
             alert('Correo enviado correctamente');
             console.log('Success:', response.status, response.text);
