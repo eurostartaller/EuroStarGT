@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             console.error('Error:', error);
         });
         alert('Gracias por agendar una cita. Te contactaremos pronto.');
-        // citaForm.reset();
+        citaForm.reset();
     });
 
     // Datos de las marcas de vehículos
